@@ -2,15 +2,17 @@
 // Eye tracking
 // ------------
 
-const eyeRightPupil = document.querySelector('.eye-one-pupil');
-const eyeLeftPupil = document.querySelector('.eye-two-pupil');
-const eyeLeftInner = document.querySelector('.eye-two-white');
+
+
+const eyeRightPupil = document.querySelector('.yuyu-eyeone-pupil');
+const eyeLeftPupil = document.querySelector('.yuyu-eyeone-pupil');
+const eyeLeftInner = document.querySelector('.yuyu-eyeone-white');
 const innerEyeWidth = eyeLeftInner.getBoundingClientRect().width;
 const innerEyeHeight = eyeLeftInner.getBoundingClientRect().height;
 const pupilWidth = eyeLeftPupil.getBoundingClientRect().width;
 const pupilHeight = eyeLeftPupil.getBoundingClientRect().height;
-const xMovement = (innerEyeWidth - pupilWidth)/8;
-const yMovement = (innerEyeHeight - pupilHeight)/8;
+const xMovement = (innerEyeWidth - pupilWidth)/10;
+const yMovement = (innerEyeHeight - pupilHeight)/10;
 
 window.addEventListener('mousemove', updateEyePosition);
 
@@ -21,3 +23,8 @@ function updateEyePosition(event) {
   eyeLeftPupil.style.transform = `translate(${posX}px, ${posY}px)`;
   eyeRightPupil.style.transform = `translate(${posX}px, ${posY}px)`;
 }
+
+
+
+
+
