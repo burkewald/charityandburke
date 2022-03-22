@@ -117,18 +117,33 @@
 	<g>
 		<circle class="st3" cx="39.4" cy="70.1" r="12.2"/>
 	</g>
-	<g>
-		<ellipse class="st1" cx="36.6" cy="70.1" rx="1.9" ry="2.6"/>
-	</g>
-	<g>
-		<ellipse cx="36.6" cy="70.1" rx="1.2" ry="2.4"/>
-	</g>
-	<g>
-		<ellipse class="st1" cx="42.1" cy="70.1" rx="1.9" ry="2.6"/>
-	</g>
-	<g>
-		<ellipse cx="42.1" cy="70.1" rx="1.2" ry="2.4"/>
-	</g>
+	<g class="bubs-eyes"></g>
+		<defs>
+			<clipPath id="bubs-eyeone-clip">
+				<ellipse cx="36.6" cy="70.1" rx="1.9" ry="2.6"/>
+			</clipPath>
+
+			<clipPath id="bubs-eyetwo-clip">
+				<ellipse class="st1 byb-eyetwo-clip" cx="42.1" cy="70.1" rx="1.9" ry="2.6"/>
+			</clipPath>
+		</defs>
+
+		<g>
+			<ellipse class="st1 bubs-eyeone-white" cx="36.6" cy="70.1" rx="1.9" ry="2.6"/>
+		</g>
+
+		<g clip-path="url(#bubs-eyeone-clip)">
+			<ellipse class="bubs-eyeone-pupil" cx="36.6" cy="70.1" rx="1.2" ry="2.4"/>
+		</g> 
+
+		<g>
+			<ellipse class="st1 bub-eyetwo-white" cx="42.1" cy="70.1" rx="1.9" ry="2.6"/>
+		</g>
+
+		<g clip-path="url(#bubs-eyetwo-clip)">
+			<ellipse class="bubs-eyetwo-pupil" cx="42.1" cy="70.1" rx="1.2" ry="2.4"/>
+		</g>
+
 </g>
 <!--bubs end-->
 <g>
@@ -148,7 +163,24 @@
                 <clipPath id="yuyu-eyeone-clip">
                     <circle cx="68.8" cy="36" r="5.8"/>
                 </clipPath>
+
+				<clipPath id="yuyu-eyetwo-clip">
+                    <circle cx="59.1" cy="28.8" r="2.6"/>
+                </clipPath>
+
+				<clipPath id="yuyu-eyethree-clip">
+                    <circle cx="59.1" cy="42.2" r="3.8"/>
+                </clipPath>
+
+				<clipPath id="yuyu-eyefour-clip">
+                    <circle cx="75.4" cy="31" r="1.4"/>
+                </clipPath>
+
+				<clipPath id="yuyu-eyefive-clip">
+                    <circle cx="70.7" cy="44.5" r="1.4"/>
+                </clipPath>
             </defs>
+
             <circle class="st1 yuyu-eyeone-white" cx="68.8" cy="36" r="5.8"/>
 
             <g clip-path="url(#yuyu-eyeone-clip)">
@@ -156,17 +188,31 @@
             </g>  
             
 
-            <circle class="st1" cx="59.1" cy="28.8" r="2.6"/>
-            <circle cx="59.1" cy="28.8" r="1.4"/>
+            <circle class="st1 yuyu-eyetwo-white" cx="59.1" cy="28.8" r="2.6"/>
 
-            <circle class="st1" cx="59.1" cy="42.2" r="3.8"/>
-            <circle cx="59.1" cy="41.9" r="2.1"/>
+			<g clip-path="url(#yuyu-eyetwo-clip)">
+                <circle class="yuyu-eyetwo-pupil" cx="59.1" cy="28.8" r="1.4"/>
+            </g> 
 
-            <circle class="st1" cx="75.4" cy="31" r="1.4"/>
-            <circle cx="75.4" cy="31" r="0.8"/>
+			<circle class="st1 yuyu-eyethree-white" cx="59.1" cy="42.2" r="3.8"/>
 
-            <circle class="st1" cx="70.7" cy="44.5" r="1.4"/>
-            <circle cx="70.7" cy="44.5" r="0.8"/>
+			<g clip-path="url(#yuyu-eyethree-clip)">
+                <circle class="yuyu-eyethree-pupil" cx="59.1" cy="41.9" r="2.1"/>
+            </g> 
+
+			<circle class="st1 yuyu-eyefour-white" cx="75.4" cy="31" r="1.4"/>
+
+			<g clip-path="url(#yuyu-eyefour-clip)">
+                <circle class="yuyu-eyefour-pupil" cx="75.4" cy="31" r="0.8"/>
+            </g> 
+
+			<circle class="st1 yuyu-eyefive-white" cx="70.7" cy="44.5" r="1.4"/>
+
+			<g clip-path="url(#yuyu-eyefive-clip)">
+                <circle class="yuyu-eyefive-pupil" cx="70.7" cy="44.5" r="0.8"/>
+            </g> 
+
+			
         </g>
 </g>
 <!--yuyu end-->
