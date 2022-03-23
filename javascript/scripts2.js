@@ -3,7 +3,6 @@
 // ------------
 
 
-
 const yuyueyeOnePupil = document.querySelector('.yuyu-eyeone-pupil');
 const yuyueyeTwoPupil = document.querySelector('.yuyu-eyetwo-pupil');
 const yuyueyeThreePupil = document.querySelector('.yuyu-eyethree-pupil');
@@ -32,8 +31,6 @@ const yuyuFourxMovement = (yuyuinnerFourEyeWidth - yuyupupilFourWidth)/20;
 const yuyuFouryMovement = (yuyuinnerFourEyeHeight - yuyupupilFourHeight)/20;
 
 
-
-
 const bubseyeOnePupil = document.querySelector('.bubs-eyeone-pupil');
 const bubseyeTwoPupil = document.querySelector('.bubs-eyetwo-pupil');
 const bubseyeTwoInner = document.querySelector('.bubs-eyeone-white');
@@ -53,6 +50,9 @@ const kaipupilWidth = kaieyeTwoPupil.getBoundingClientRect().width;
 const kaipupilHeight = kaieyeTwoPupil.getBoundingClientRect().height;
 const kaixMovement = (kaiinnerEyeWidth - kaipupilWidth)/22;
 const kaiyMovement = (kaiinnerEyeHeight - kaipupilHeight)/22;
+
+
+
 
 
 
@@ -101,6 +101,9 @@ const squirtpupilWidth = squirteyeTwoPupil.getBoundingClientRect().width;
 const squirtpupilHeight = squirteyeTwoPupil.getBoundingClientRect().height;
 const squirtxMovement = (squirtinnerEyeWidth - squirtpupilWidth)/20;
 const squirtyMovement = (squirtinnerEyeHeight - squirtpupilHeight)/20;
+
+
+
 
 
 
