@@ -1,0 +1,41 @@
+.social-issues {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+
+.social-issues__left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.social-issues-names {
+    display: flex;
+
+}
+
+.social-issues__right--left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.social-issues__right--right {
+    display: flex;
+    flex-direction: column;
+}
+
+
+ul {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: wrap column;
+    flex-flow: wrap column;
+    max-height: 500px;
+    float: left;
+}
